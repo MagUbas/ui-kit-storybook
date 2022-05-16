@@ -1,0 +1,42 @@
+.task{
+    height: 50px;
+    height: fit-content;
+    width: 100%;
+    border-radius: 15px;
+    background-color:   #F1ECF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+.taskIcon{
+    width: 24px;
+    height: 24px;
+    float:right;
+    margin:0px 10px;
+    color: #7929E8;
+    
+}
+.taskIcon:hover{
+    color: #3D1574;
+}
+
+
+.taskArchived{
+    background-color: grey;
+}
+
+@keyframes loading {
+    0%  {background-color: #F1ECF8;}
+  50%  {background-color: rgb(204, 203, 203);}
+  100%  {background-color: #F1ECF8;}
+  }
+
+
+.loadingTask{
+    animation-name: loading;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+

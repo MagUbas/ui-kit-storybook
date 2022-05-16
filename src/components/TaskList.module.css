@@ -1,0 +1,61 @@
+@keyframes loading {
+    0%   {background-color: rgb(209, 209, 209);}
+  50%  {background-color: rgb(167, 167, 167);}
+  100%  {background-color: rgb(209, 209, 209);}
+  }
+
+
+.taskInput{
+    display: flex;
+    height: 50px;
+}
+.tasksButtons{
+    width: 100%;
+    display: flex;
+}
+
+.taskList{
+    width: 350px;
+}
+.taskListEmpty{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+.taskListEmpty p{
+    margin: 7px;
+}
+
+.loadingTasks{
+    height: 50px;
+    width: 100%;
+    margin: 8px;
+    border-radius: 15px;
+    background-color:   #F1ECF8;
+}
+.loadingTasks span{
+    display: inline-block;
+    animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.checkBoxLoading{
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px;
+    margin-left: 10px;
+}
+.textLoadingLong{
+    width: 50px;
+    height: 20px;
+    margin: 15px 5px;
+}
+.textLoadingShort{
+    width: 35px;
+    height: 20px;
+    margin: 15px 5px;
+}

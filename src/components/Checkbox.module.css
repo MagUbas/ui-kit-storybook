@@ -1,0 +1,149 @@
+
+
+.checkbox{
+    position: relative;
+    margin: 5px 5px;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.checkboxLabel{
+    vertical-align: middle;
+    max-width: calc(100% - 35px);
+    overflow-wrap: break-word;
+    margin: 0;
+    line-height:26px;
+}
+
+
+.checkboxSmall{
+    font-size: 13px;
+}
+.checkboxSmall .checkboxInput{
+    width: 15px;
+    height: 15px;
+    border-radius: 3px; 
+}
+.checkboxSmall .checkboxLabel{
+    max-width: calc(100% - 25px);
+    line-height:21px;
+}
+
+.checkboxLarge{
+    font-size: 30px;
+}
+.checkboxLarge .checkboxInput{
+    margin-right: 10px;
+    border-width: 2px ;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.checkboxLarge .checkboxLabel{
+    max-width: calc(100% - 70px);
+    line-height:46px;
+}
+
+
+.checkboxInput{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    width: 20px;
+    height: 20px;
+    background: #F9F9F9;
+    border: 1px solid #B3B3B3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: middle;
+   
+} 
+
+
+.checkboxInput:hover{
+    border-color:  #6522C1;
+    box-shadow:none
+}
+.checkboxInput:focus{
+    border-color:  #7B61FF;
+    box-shadow:none
+}
+.checkboxInput:disabled{
+    border-color: #C9C9C9;
+    background: #F5F5F5;
+    box-shadow:none
+}
+.checkboxInput:disabled ~ .checkboxLabel {
+    color: #999999;
+}
+
+.checkboxInputPrimary:checked{
+    box-shadow:none;
+    background-color:#6522C1;
+    background-clip: content-box;
+    padding: 3px;
+}
+.checkboxInput:checked:disabled{
+    background-color:#999999;
+}
+.checkboxSmall .checkboxInputPrimary:checked{
+    padding: 2px;
+} 
+.checkboxLarge .checkboxInputPrimary:checked{
+    padding: 5px;
+} 
+
+.checkboxInputSecondary:checked{
+    box-shadow:none;
+    background-color:#6522C1;
+   
+}
+.checkboxInputSecondary:checked +.checkboxLabel::before,.checkboxInputSecondary:checked +.checkboxLabel::after{
+    content: "";
+    position: absolute; 
+    background-color: white;
+    width: 2px;
+    border-radius: 1px;
+
+}
+.checkboxInputSecondary:checked +.checkboxLabel::before{
+    top: 6px;
+    left: 15px;
+    height: 13px;
+    transform: rotate(30deg);
+}
+.checkboxInputSecondary:checked +.checkboxLabel::after{
+    top: 10.5px;
+    left: 10.5px;
+    height: 8px;
+    transform: rotate(-30deg);
+}
+
+.checkboxSmall .checkboxInputSecondary:checked +.checkboxLabel::before{
+    top: 6px;
+    left: 12px;
+    height: 9px;
+}
+.checkboxSmall .checkboxInputSecondary:checked +.checkboxLabel::after{
+    top:9.5px;
+    left: 9.3px;
+    height: 5px;
+}
+.checkboxLarge .checkboxInputSecondary:checked +.checkboxLabel::before{
+    top: 10px;
+    left: 27px;
+    height: 27px;
+    width: 3px;
+    border-radius: 1.5px;
+}
+.checkboxLarge .checkboxInputSecondary:checked +.checkboxLabel::after{
+    top: 22.5px;
+    left: 18px;
+    height: 13px;
+    width: 3px;
+    border-radius: 1.5px;
+}
