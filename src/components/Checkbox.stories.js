@@ -18,6 +18,7 @@ export default {
       </div>
     ),
   ],
+  parameters: { actions: { argTypesRegex: "^on.*" } },
 };
 
 const Template = (args) => <Checkbox {...args} />;

@@ -4,6 +4,8 @@ import Button from "./Button";
 export default {
   component: Button,
   title: "Components/Button",
+  // argTypes: { onClick: { action: "clicked" } },
+  parameters: { actions: { argTypesRegex: "^on.*" } },
 };
 
 const Template = (args) => <Button {...args} />;
@@ -20,6 +22,7 @@ Primary.args = {
 export const secondary = Template.bind({});
 secondary.args = {
   colorScheme: "Default",
+  primary: false,
   label: "Button",
 };
 export const icon = Template.bind({});

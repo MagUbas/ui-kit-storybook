@@ -26,4 +26,5 @@ ToggleSwitch.propTypes = {
 ToggleSwitch.defaultProps = {
   label: "Label",
   disabled: false,
+  onChecked: () => {},
 };
