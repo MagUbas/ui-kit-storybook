@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Storybook based UI Kit
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/105423536/179481850-bb7bd10a-9c1a-4a47-8aff-f14a10f671b2.png" width="700" />
+  <img src="https://user-images.githubusercontent.com/105423536/179482949-b8b5ddaa-3065-40f3-b258-af7239281643.png" width="300" /> 
+  
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Motivations
+* I wanted to prepare something close to a real-world working methodology. A set of reusable, standalone components such as buttons, inputs and modals etc. I've never done such a thing so it was an interesting and challenging task. 
+## Project info
+* Set of reusable components prepared in Storybook environment.
+All of them have multiple available states and style options. Depending on usage the components could be adjusted accordingly. 
+  * Forms allow for multiple input types with option to include custom validation. Providing a list of required inputs is enough to have a working form, including a loading animation.
+  * Task lists support marking tasks as important, archiving, adding new ones and wiping the done list.
+* Project is prepared with expandability in mind. New components or different types of existing components can be easily added.
+* Graphical inspiration taken from browsing multiple projects on Figma
+## How to run this project
+```
+git clone https://github.com/MagUbas/ui-kit-storybook
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm storybook
+```
+## If I had more time I would
+* Add more components. 
+* Create an example site that uses those elements.
+* Add tests
